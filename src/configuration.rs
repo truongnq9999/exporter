@@ -15,7 +15,8 @@ pub fn get_configuration() -> Result<Settings, config::ConfigError> {
     let profile = std::env::var("APP_ENVIRONMENT").unwrap_or_else(|_| "dev".into());
 
     let default_config_file = config::File::with_name("application");
-    let config_file = config::File::with_name(&format!("application.{}", profile)).required(false);
+    let config_file
+        = config::File::with_name(&format!("application.{}", profile)).required(false);
 
     // warning: order matters here, the last file loaded will overwrite the previous ones
     config::Config::builder()

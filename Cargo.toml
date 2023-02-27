@@ -25,4 +25,3 @@ tracing-actix-web = "0.7.2"
 # Template engine
 handlebars = { version = "4.3.6", features = ["dir_source"] }
 wkhtmlapp = "1.0.2"
-headless_chrome = "1.0.5"

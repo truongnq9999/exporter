@@ -1,5 +1,4 @@
 use std::net::TcpListener;
-use handlebars::Handlebars;
 
 use exporter::configuration::get_configuration;
 use exporter::startup::run;
